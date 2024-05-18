@@ -14,8 +14,8 @@ module.exports = {
         let robot = robotmasters.find(r => parseInt(r.id, 10) === parseInt(id, 10));
         return robot;
     },
-    getRobotMastersBySeriesId: function getRobotMastersBySeriesId(seriesId) {        
-        let robots = robotmasters.find(r => r.series === parseInt(seriesId));
+    getRobotMastersById: function getRobotMastersBySeriesId(id) {        
+        let robots = robotmasters.find( (robot) => robot.id === parseInt(id));
         console.log(robots);
         return robots;
     }
